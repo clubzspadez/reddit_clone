@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Raddit</title>
+    <title>C0D Team</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -13,7 +13,7 @@
   <div class="navbar navbar-default" role="navigation">
     <div class="navbar-inner">
       <div class="container">
-        <div class="navbar-brand"> <%= link_to "Reddit-Clone", root_path %> </div>
+        <div class="navbar-brand"> <%= link_to "TEAM", root_path %> </div>
         <nav class="collapse navbar-collapse navbare-ex1-collapse">
           <% if user_signed_in? %>
           <ul class="nav navbar-nav navbar-right">
@@ -45,11 +45,21 @@
 
 
 
-  <div class="col-md-9 center-block">
+  <div id="content" class="col-md-9 center-block">
 
    <%= yield %>
-   </div>
 
+   <div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2016-2017 - Site Built By Jonathan Rodriguez.
+           <a href="http://www.github.com/clubzspadez" target="_blank" >Github</a>
+      </p>
+
+      <a href="https://www.youtube.com/watch?v=1tyCkVGS-Kc&list=PLrLpCEiwTqGkhhR7-uQLhrtqfEyEJjZiE&index=1" class="navbar-btn btn-danger btn pull-right">
+      <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+    </div>
+
+   </div>
 </div>
 
 
